@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather in Indian Cities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .weather-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .city-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .city-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1a5f7a;
+        }
+        .temperature {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #333;
+        }
+        .weather-info {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+        .weather-info div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .weather-info span {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .weather-info .value {
+            font-weight: bold;
+            color: #333;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather in Indian Cities</h1>
+    <div class="weather-grid">
+        <div class="city-card">
+            <div class="city-name">Mumbai</div>
+            <div class="temperature">32°C</div>
+            <div class="weather-info">
+                <div>
+                    <span>Humidity</span>
+                    <span class="value">70%</span>
+                </div>
+                <div>
+                    <span>Wind</span>
+                    <span class="value">12 km/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="city-card">
+            <div class="city-name">Delhi</div>
+            <div class="temperature">28°C</div>
+            <div class="weather-info">
+                <div>
+                    <span>Humidity</span>
+                    <span class="value">55%</span>
+                </div>
+                <div>
+                    <span>Wind</span>
+                    <span class="value">8 km/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="city-card">
+            <div class="city-name">Bangalore</div>
+            <div class="temperature">25°C</div>
+            <div class="weather-info">
+                <div>
+                    <span>Humidity</span>
+                    <span class="value">65%</span>
+                </div>
+                <div>
+                    <span>Wind</span>
+                    <span class="value">10 km/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="city-card">
+            <div class="city-name">Chennai</div>
+            <div class="temperature">30°C</div>
+            <div class="weather-info">
+                <div>
+                    <span>Humidity</span>
+                    <span class="value">75%</span>
+                </div>
+                <div>
+                    <span>Wind</span>
+                    <span class="value">15 km/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="city-card">
+            <div class="city-name">Kolkata</div>
+            <div class="temperature">29°C</div>
+            <div class="weather-info">
+                <div>
+                    <span>Humidity</span>
+                    <span class="value">80%</span>
+                </div>
+                <div>
+                    <span>Wind</span>
+                    <span class="value">7 km/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="city-card">
+            <div class="city-name">Hyderabad</div>
+            <div class="temperature">27°C</div>
+            <div class="weather-info">
+                <div>
+                    <span>Humidity</span>
+                    <span class="value">60%</span>
+                </div>
+                <div>
+                    <span>Wind</span>
+                    <span class="value">9 km/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="city-card">
+            <div class="city-name">Ahmedabad</div>
+            <div class="temperature">31°C</div>
+            <div class="weather-info">
+                <div>
+                    <span>Humidity</span>
+                    <span class="value">50%</span>
+                </div>
+                <div>
+                    <span>Wind</span>
+                    <span class="value">11 km/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="city-card">
+            <div class="city-name">Pune</div>
+            <div class="temperature">26°C</div>
+            <div class="weather-info">
+                <div>
+                    <span>Humidity</span>
+                    <span class="value">62%</span>
+                </div>
+                <div>
+                    <span>Wind</span>
+                    <span class="value">8 km/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="city-card">
+            <div class="city-name">Jaipur</div>
+            <div class="temperature">33°C</div>
+            <div class="weather-info">
+                <div>
+                    <span>Humidity</span>
+                    <span class="value">45%</span>
+                </div>
+                <div>
+                    <span>Wind</span>
+                    <span class="value">13 km/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="city-card">
+            <div class="city-name">Lucknow</div>
+            <div class="temperature">30°C</div>
+            <div class="weather-info">
+                <div>
+                    <span>Humidity</span>
+                    <span class="value">58%</span>
+                </div>
+                <div>
+                    <span>Wind</span>
+                    <span class="value">7 km/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="city-card">
+            <div class="city-name">Kanpur</div>
+            <div class="temperature">31°C</div>
+            <div class="weather-info">
+                <div>
+                    <span>Humidity</span>
+                    <span class="value">55%</span>
+                </div>
+                <div>
+                    <span>Wind</span>
+                    <span class="value">9 km/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="city-card">
+            <div class="city-name">Nagpur</div>
+            <div class="temperature">29°C</div>
+            <div class="weather-info">
+                <div>
+                    <span>Humidity</span>
+                    <span class="value">57%</span>
+                </div>
+                <div>
+                    <span>Wind</span>
+                    <span class="value">10 km/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="city-card">
+            <div class="city-name">Indore</div>
+            <div class="temperature">28°C</div>
+            <div class="weather-info">
+                <div>
+                    <span>Humidity</span>
+                    <span class="value">53%</span>
+                </div>
+                <div>
+                    <span>Wind</span>
+                    <span class="value">8 km/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="city-card">
+            <div class="city-name">Thane</div>
+            <div class="temperature">30°C</div>
+            <div class="weather-info">
+                <div>
+                    <span>Humidity</span>
+                    <span class="value">72%</span>
+                </div>
+                <div>
+                    <span>Wind</span>
+                    <span class="value">11 km/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="city-card">
+            <div class="city-name">Bhopal</div>
+            <div class="temperature">27°C</div>
+            <div class="weather-info">
+                <div>
+                    <span>Humidity</span>
+                    <span class="value">59%</span>
+                </div>
+                <div>
+                    <span>Wind</span>
+                    <span class="value">9 km/h</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
